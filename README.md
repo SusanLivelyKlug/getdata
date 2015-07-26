@@ -39,16 +39,24 @@
 
 ## Your directory structure must look like this:
 
- Data is in several text format files in two directories, test and train
+ Data is in several text format files at the top directory plus two subdirectories, train and test.
+ There are subdirectories not used called "Inertial Signals".
+ 
  ./UCI HAR Dataset
+ 
     README.txt, activity_labels.txt, features.txt, features_info.txt
+    
  ./UCI HAR Dataset/train
+ 
     X_test.txt, subject_test.txt, y_test.txt
-    ./Inertial Signals # extraneous data not needed for this project
- ./UCI HAR Dataset/test
-    X_test.txt, subject_test.txt, y_test.txt
-    ./Inertial Signals # extraneous data not needed for this project
 
-required libraries
+ ./UCI HAR Dataset/test
+ 
+    X_test.txt, subject_test.txt, y_test.txt
+
+
+###required libraries
+
 library(dplyr)
+
 library(reshape2)
